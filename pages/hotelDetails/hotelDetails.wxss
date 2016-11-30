@@ -1,0 +1,291 @@
+.container_hd {
+  background-color: #F0EFF5;
+}
+
+.hotelDetails {
+  width: 100%;
+  min-height: 100%;
+}
+
+.hotelImage {
+  width: 100%;
+  margin-bottom: -0.266667rem;
+}
+
+.mapImage {
+  width: 100%;
+  margin: 0.773333rem 1.04rem 0.96rem;
+  padding-left: 1.12rem;
+  background-color: #F0EFF5;
+  box-sizing: border-box;
+}
+
+.mapImage text {
+  display: block;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  width: 14rem;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  font-size: 28.12rpx;
+  color: #000;
+}
+
+.mapImage text:before {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.933333rem;
+  background: url('../../images/map.png') no-repeat top center;
+  background-size: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.mapImage text:after {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.666667rem;
+  background: url('../../images/Arow.jpg') no-repeat top center;
+  background-size: 100%;
+  position: relative;
+  top: 0.16rem;
+  right: -0.586667rem;
+}
+
+.iconImage {
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  width: 96%;
+  height: 6.266667rem;
+  background-color: #fff;
+  border: 1rpx solid #D6D6D6;
+  margin: 0 auto;
+}
+
+.up {
+  height: 2.4rem;
+  border-bottom: 1rpx solid #D6D6D6;
+  padding-left: 0.853333rem;
+  font-size: 0;
+}
+
+.up .leftIcon {
+  float: left;
+  width: 50%;
+  font-size: 28.12rpx;
+  color: #7D8DA4;
+  line-height: 2.4rem;
+}
+
+.up .leftIcon icon {
+  position: relative;
+  top: 10rpx;
+}
+
+.up .rightIcon {
+  float: right;
+  height: 2.4rem;
+  width: 50%;
+  line-height: 2.4rem;
+  text-align: right;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+
+.up .rightIcon .Image_01 {
+  display: inline-block;
+  width: 0.88rem;
+  height: 0.56rem;
+  margin: 0 0.533333rem;
+}
+
+.up .rightIcon .Image_02 {
+  display: inline-block;
+  width: 0.906667rem;
+  height: 0.693333rem;
+  margin: -0.106667rem 0.533333rem;
+}
+
+.up .rightIcon .Image_03 {
+  display: inline-block;
+  width: 0.64rem;
+  height: 0.64rem;
+  margin: -0.026667rem 0.533333rem;
+}
+
+.down {
+  padding-left: 1.04rem;
+  height: 3.893333rem;
+  padding-top: 0.853333rem;
+  box-sizing: border-box;
+}
+
+.down .timerIcon {
+  display: inline-block;
+  width: 17.013333rem;
+  height: 1.946667rem;
+  padding-left: 0.213333rem;
+  font-size: 28.12rpx;
+  color: #A7B2C1;
+  text-align: left;
+  line-height: 0.96rem;
+  box-sizing: border-box;
+}
+
+.down:before {
+  content: "";
+  display: inline-block;
+  width: 42rpx;
+  height: 38rpx;
+  background: url("../../images/timer.png") no-repeat top center;
+  background-size: 100%;
+  position: relative;
+  top: -0.213333rem;
+  left: -0.213333rem;
+}
+
+.leaveHotel {
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  width: 100%;
+  height: 2.56rem;
+  background-color: #fff;
+  margin: 0.346667rem 0 0.666667rem;
+}
+
+.leaveHotel .leavehotel {
+  height: 2.56rem;
+  line-height: 2.56rem;
+  font-size: 24rpx;
+  color: #AAAAAA;
+  padding-left: 1.546667rem;
+}
+
+.leaveHotel .leavehotel text {
+  color: #444444;
+  font-size: 30rpx;
+  margin-right: 0.453333rem;
+}
+
+.allDetails {
+  margin-bottom: 20rpx;
+  background-color: #F0EFF5;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+
+.Detailhotel {
+  width: 100%;
+  height: 4.746667rem;
+  border-bottom: 0.026667rem solid #E6E6E6;
+  font-size: 0;
+}
+
+.Detailhotel .leftHotel {
+  float: left;
+  width: 4.346667rem;
+  height: 4.373333rem;
+  margin: 0.16rem 1.173333rem 0.16rem 0.56rem;
+}
+
+.Detailhotel .middleContent {
+  float: left;
+  height: 4.746667rem;
+  width: 9.466667rem;
+  padding: 0.533333rem 0.533333rem 0.586667rem 0;
+  box-sizing: border-box;
+}
+
+.Detailhotel .middleContent text {
+  display: block;
+}
+
+.Detailhotel .middleContent .text_01 {
+  height: 1.04rem;
+  line-height: 1.04rem;
+  font-size: 30.46rpx;
+  color: #444444;
+}
+
+.Detailhotel .middleContent .text_02 {
+  font-size: 23.43rpx;
+  color: #9BA7B9;
+  line-height: 0.693333rem;
+}
+
+.Detailhotel .middleContent .text_03 {
+  font-size: 23.43rpx;
+  color: #58A4EE;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+}
+
+.Detailhotel .middleContent .text_03:after {
+  content: "";
+  display: inline-block;
+  width: 0.826667rem;
+  height: 0.826667rem;
+  background: url("../../images/revise.png") no-repeat top center;
+  background-size: 100%;
+  position: relative;
+  top: 0.266667rem;
+  right: -0.453333rem;
+}
+
+.Detailhotel .rightPrice {
+  float: right;
+  padding: 22rpx 0 13rpx 0;
+  height: 150rpx;
+  width: 235rpx;
+  /*background-color: green;*/
+  box-sizing: border-box;
+}
+
+.Detailhotel .rightPrice text {
+  display: block;
+  width: 235rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Detailhotel .rightPrice .add {
+  color: #FF7F00;
+}
+
+.Detailhotel .rightPrice .reduce {
+  color: #58A4EE;
+}
+
+.Detailhotel .rightPrice button {
+  display: block;
+  width: 130rpx;
+  height: 60rpx;
+  border: 2rpx solid #E55922;
+  font-size: 22rpx;
+  line-height: 60rpx;
+  margin-right: 30rpx;
+}
+
+.Detailhotel .rightPrice .Choose {
+  color: #E55922;
+  position: relative;
+}
+
+.Detailhotel .rightPrice .Choose:before {
+  content: "";
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  background: url("../../images/trueIcon.png") no-repeat top right;
+  background-size: 100%;
+  position: absolute;
+  bottom: -2rpx;
+  right: -1rpx;
+}
+
+.Detailhotel .rightPrice .noChoose {
+  color: #fff;
+  background-color: #E55922;
+}

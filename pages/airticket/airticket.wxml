@@ -1,0 +1,82 @@
+<!--pages/airticket/airticket.wxml-->
+<view class="container">
+<!--头部-->
+  <view class="head">
+            <view class="go">去程</view>
+            <text class="city">上海-北京</text>
+            <text class="time">09月15日</text>
+            <text class="number">共36条</text>
+  </view>
+    <view class="wrap">
+        <scroll-view scroll-y="true">
+        <!--机票信息start-->
+            <view class="ticketList" wx:for="{{list1}}" wx:key="id" bindtap="go" id="{{list1.id}}">
+                <view class="ticketList_top">
+                    <view class="flight_info">
+                        <view class="flight_info_t">
+                            <text>10:30</text>
+                            <view>
+                                <view class="timeLine">
+                                    <image src="../../images/flight.png" class="img"></image>
+                                </view>
+                            </view>
+                            <text>09:10</text>
+                        </view>
+                        <view class="flight_info_b">
+                            <text>上海虹桥T1</text>
+                            <text>北京首都T3</text>
+                        </view>
+                    </view>
+                    <view class="flight_price">
+                        <view class="price">
+                            <text style="color:#FF7F00">¥</text>
+                            <text style="font-size:22px; color:#FF7F00">388</text>
+                            <text>起</text>
+                        </view>
+                        <view>经济舱4.1折</view>
+                    </view>
+                </view>
+                <view class="ticketList_btm">
+                    <view>
+                        <text>东航MU5101</text><text style="margin:0 15rpx;">|</text>
+                        <text>737</text><text style="margin:0 15rpx;">|</text><text>有餐食</text>
+                    </view>  
+                </view>
+                <!--机票价格及预订-->
+                <view class="ticketDetailList" wx:for="{{item.list2}}" wx:for-index="{{idx}}" wx:key="id" hidden="{{hidden ? true : false}}" bindtap="ticketSearch_back" id="{{item.id}}">
+                    <image class="arrow" src="../../images/arow.png"></image>
+                    <view class="book">
+                        <view class="cabinType">
+                            <text>超值头等舱</text>
+                            <text class="privilege">经济舱</text>
+                        </view>
+                        <view class="price">
+                            <text class="rmb">¥</text>
+                            <text>1030</text>
+                        </view>
+                    </view>
+                    <view class="priceInfo"> 
+                        <view class="reminder">
+                            <view class="mealService">
+                                <image src="../../images/visa_gray.png"></image>
+                                <text>须知</text>
+                            </view>
+                            <view class="mealService">
+                                <image src="../../images/visa_gray.png"></image>
+                                <text>退改签详情</text>
+                            </view>
+                        </view>
+                        <view class="moreTicket">余票充足</view>
+                    </view>
+                </view> 
+            </view>
+        <!--wrap结束-->
+        </scroll-view>
+    </view>
+<!--尾部-->
+  <view class="foot">
+            <view class="go">返程</view>
+            <text class="city">北京-上海</text>
+            <text class="time">09月15日</text>
+  </view>
+</view>

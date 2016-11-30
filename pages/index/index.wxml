@@ -1,0 +1,99 @@
+<!--ticketBooking.wxml-->
+<view class="container">
+<!--白色背景区域-->
+  <view class="wrap">
+  <!--按钮切换-->
+    <view class="btn" bindtap="changeBtn">
+      <view class="{{currentIndex==0?'active':''}}" data-index="0">单程</view>
+  	  <view class="{{currentIndex==1?'active':''}}" data-index="1">往返</view>
+    </view>
+
+    <!--城市选择-->
+    <view class="chooseCity pd-70">
+  		<view class="citySelect">
+  			<view class="startCity" bindtap="selectCity">{{startCity}}</view>
+  			<view class="citySelect_img">
+          <view bindtap="rotate_img" animation="{{animation}}">
+            <image class="changeCity_bg" src="../../images/changeCity_bg.png"></image>
+          </view>
+  				<image class="samll_plane" src="../../images/samll_plane.png"></image>
+  			</view>
+  			<view class="endCity" bindtap="selectCity">{{endCity}}</view>
+  		</view>
+
+      <view class="chooseDate">
+        <block>
+          <picker mode="date">
+            <view class="startDate">
+              <text class="date">9月8日</text>
+              <text class="week">周二出发</text>
+            </view>
+          </picker>
+        </block>
+        <block wx:if="{{currentIndex==1}}">
+          <picker mode="date">
+            <view class="endDate">
+              <text class="date">9月11日</text>
+              <text class="week">周五返回</text>
+            </view>
+          </picker>
+        </block>
+      </view>
+    </view>
+
+    <view class="title">酒店</view>
+
+    <view class="chooseCity pd-70 pdt-0">
+  		<view class="citySelect">
+  			<view class="hotelCity" bindtap="selectCity">{{hotelCity}}</view>
+  		</view>
+
+      <view class="chooseDate">
+        <block>
+          <picker mode="date">
+            <view class="startDate">
+              <text class="date">9月8日</text>
+              <text class="week">周二出发</text>
+            </view>
+          </picker>
+        </block>
+        <block>
+          <picker mode="date">
+            <view class="endDate">
+              <text class="date">9月11日</text>
+              <text class="week">周五返回</text>
+            </view>
+          </picker>
+        </block>
+      </view>
+    </view>
+
+    <view class="title">人数</view>
+
+    <view class="person">
+      <view class="personNum">
+        <view class="text">成人</view>
+        <view class="outer">
+          <view class="minus" bindtap="minusAdultNum">—</view>
+          <view class="num">{{adultNum}}</view>
+          <view class="plus" bindtap="plusAdultNum">+</view>
+        </view>
+      </view>
+
+      <view class="personNum ml-30">
+        <view class="text">儿童</view>
+        <view class="outer">
+          <view class="minus" bindtap="minusChildNum">—</view>
+          <view class="num">{{childNum}}</view>
+          <view class="plus" bindtap="plusChildNum">+</view>
+        </view>
+      </view>
+      <view class="tishi">
+        <image src="../../images/tishi.png" class="tsimg"></image>
+      </view>
+
+    </view>
+
+    <button class="sureBtn" bindtap="seatchProduct">确定</button>
+  </view>
+</view>

@@ -1,0 +1,53 @@
+
+<view class="container">
+    <view class="nav" bindtap="handleTapEvent">
+        <view class="home {{currentIndex==0?'active':''}}" data-index="0">国内</view>
+        <view class="abroad {{currentIndex==1?'active':''}}" data-index="1">国际/地区</view>
+    </view>
+    <view class="toolBar">
+        <scroll-view scroll-y="true">
+            <view wx:for="{{word}}" wx:for-index="idx" wx:key="id" bindtap="tap" id="{{item.id}}">{{item.message}}</view>
+        </scroll-view>
+    </view>
+    <view class="wrapCity">
+        <swiper current="{{currentIndex}}" duration="100" bindchange="handleChangeEvent">
+            <swiper-item>
+                <scroll-view scroll-y="true" >
+                    <view class="wrap">
+                        <view class="now">
+                            <view>当前城市</view><image class="line" src="../../images/line.png"></image>
+                        </view>
+                        <view class="cities">
+                            <button class="city" wx:for="{{array}}" wx:key="id">
+                                {{item.message}}
+                            </button>
+                        </view>
+                        <view class="hot">
+                            <view>热门城市</view><image class="line" src="../../images/line.png"></image>
+                        </view>
+                        <view class="cities">
+                             <button class="city" wx:for="{{arrayHot}}" wx:key="id">
+                                {{item.message}}
+                             </button>
+                        </view>
+                    </view>
+                    <view class="cityList">
+                        <view class="letterList" >A</view>
+                        <view wx:for="{{aList}}" wx:key="id">{{item.message}}</view>
+                        <view class="letterList">B</view>
+                        <view wx:for="{{bList}}" wx:key="id">{{item.message}}</view>
+                        <view class="letterList">C</view>
+                        <view wx:for="{{bList}}" wx:key="id">{{item.message}}</view>
+                        <view class="letterList">D</view>
+                        <view wx:for="{{bList}}" wx:key="id">{{item.message}}</view>
+                        <view class="letterList">E</view>
+                        <view wx:for="{{bList}}" wx:key="id">{{item.message}}</view>
+                    </view>
+                </scroll-view>
+            </swiper-item>
+            <swiper-item>
+            333
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

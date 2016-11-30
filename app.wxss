@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+	font-family:'微软雅黑';
+  background-color: #fafafa;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.grey{
+  color: #aaa;
+}

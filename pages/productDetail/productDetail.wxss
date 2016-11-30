@@ -1,0 +1,264 @@
+.container {
+  padding: 0.533333rem;
+}
+
+.pannel {
+  background-color: #fff;
+  padding: 0.533333rem 0;
+  border-radius: 14rpx;
+  margin-bottom: 1.066667rem;
+  border: 1rpx solid #cacaca;
+}
+
+.dateNum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem 1.173333rem 0.8rem 0.906667rem;
+}
+
+.date text {
+  font-size: 30rpx;
+}
+
+.date .small {
+  color: #aaa;
+  font-size: 25rpx;
+  margin-left: 0.266667rem;
+}
+
+.num {
+  width: 36%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.num text {
+  font-size: 30rpx;
+}
+
+.flight {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.flightDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flightDate view {
+  display: flex;
+  flex-direction: column;
+}
+
+.flightDate view text {
+  font-size: 27rpx;
+}
+
+.flightDate view .time {
+  font-size: 50rpx;
+}
+
+.flightDate view .date {
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 0.266667rem;
+  font-size: 30rpx;
+}
+
+.flightDate view .flightPic {
+  display: block;
+  width: 8.666667rem;
+  height: 1.066667rem;
+  background: url('../../images/flight.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flightLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.airport {
+  color: #aaa;
+}
+
+.airport text {
+  font-size: 28rpx;
+}
+
+.airport .small {
+  font-size: 22rpx;
+}
+
+.flightDetail {
+  height: 2.346667rem;
+  line-height: 2.346667rem;
+}
+
+.flightDetail text {
+  font-size: 30rpx;
+  color: #9caabc;
+}
+
+.flightDetail .flightName {
+  padding-left: 1.6rem;
+  background: url('../../images/logo.gif') no-repeat 0.266667rem center;
+  background-size: auto 36%;
+}
+
+.flightDetail .go {
+  background-color: #ff7f00;
+  color: #fff;
+  display: block;
+  font-size: 28rpx;
+  width: 2.293333rem;
+  height: 1.226667rem;
+  line-height: 1.226667rem;
+  text-align: center;
+  margin-top: 0.56rem;
+}
+
+.remark {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 0.906667rem;
+}
+
+.remark view {
+  color: #ff7f00;
+  font-size: 22rpx;
+  margin-left: 0.266667rem;
+}
+
+.changeFlight {
+  font-size: 30rpx;
+  text-align: center;
+  color: #aaa;
+  margin-top: 0.533333rem;
+  height: 1.333333rem;
+  line-height: 1.6rem;
+  border-top: 1rpx solid #cacaca;
+}
+
+.changeHotel {
+  font-size: 30rpx;
+  text-align: center;
+  color: #aaa;
+  margin-top: 0.533333rem;
+  height: 1.333333rem;
+  line-height: 1.6rem;
+  border-top: 1rpx solid #cacaca;
+}
+
+.goFlight {
+  border-bottom: 1rpx solid #cacaca;
+  margin-bottom: 0.533333rem;
+}
+
+/*酒店*/
+
+.hotel {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-bottom: 2.933333rem;
+}
+
+.hotel .hotelPic {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.266667rem;
+  margin-bottom: 0.266667rem;
+}
+
+.hotelPic image {
+  height: 9.12rem;
+}
+
+.hotelHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hotelName {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotelName text {
+  font-size: 32rpx;
+}
+
+.hotelName .pink {
+  font-size: 25rpx;
+  color: #ff7f00;
+}
+
+.hotelDetail {
+  font-size: 27rpx;
+  color: #aaa;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.266667rem;
+}
+
+.address text {
+  font-size: 27rpx;
+  padding-left: 50rpx;
+}
+
+.address .addressName {
+  background: url('../../images/location.png') no-repeat 16rpx center;
+  background-size: auto 80%;
+}
+
+.tabBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(74, 88, 106, 0.9);
+  color: #fff;
+  padding-left: 1.066667rem;
+  box-sizing: border-box;
+}
+
+.tabBar .name {
+  font-size: 30rpx;
+  font-weight: 200;
+}
+
+.tabBar .totalPrice {
+  font-size: 34rpx;
+}
+
+.tabBar .priceDetail {
+  font-size: 30rpx;
+  text-decoration: underline;
+}
+
+.tabBar .nextStep {
+  width: 5.333333rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  background-color: #ff7f00;
+  text-align: center;
+  font-weight: 200;
+  font-size: 34rpx;
+}

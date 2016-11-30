@@ -1,0 +1,294 @@
+<!--index.wxml-->
+<!--头部固定-->
+<view class="{{addhidden?'aa':'hid'}}" >
+<view class="head">
+    <view class="bord containerSmall " >  
+        <text class="line">上海-北京4天3晚双飞自由行·入住锦苑富润酒店酒店</text>
+    </view>
+ <view class="state containerSmall">
+    <view class="gostate">出发日期：
+        <text class="txtstate_01">2016-04-23</text>
+        <text class="txtstate_02">|</text>出行人数:
+        <text class="txtstate_03">成人X2</text>
+        <text class="txtstate_04">儿童X1</text>
+    </view>
+ </view>
+</view>
+<!--选择乘机人-->
+  <form bindsubmit="formBindsubmit">
+<view class="ordergood">
+  <view class="banner">
+      <view class="layout">
+    <view class="airpeople">
+    <text class="airp">乘机人</text>
+    <view class="addp" bindtap="addp"><image src="../../images/add.png" class="add"></image></view>
+    </view> 
+      <view class="person">
+          <view class="delete"><image src="../../images/delete.png" class="del"></image></view>
+          <view class="pers"><image src="../../images/person.png" class="per"></image></view>
+
+          <view class="message"> 
+                <text class="permessage">魏忠贤</text>
+                <text class="permessage">410520198210071352</text>
+                <view class="arow"><image src="../../images/arow.png" class="arow"></image></view>
+
+          </view>
+
+      </view>
+    </view>
+  </view>
+
+  <!--乘机人信息-->
+  <view class="banner">
+    <view class="layout">
+        <view class="airpeople">
+        <label class="airp">联系人</label>
+            <input placeholder="请填写姓名" type="text" name="userName" placeholder-style="color:#929FB1; font-size:0.9em;font-weight:bold" /> 
+        </view>
+        <view class="airpeople">
+        <label class="airp">手机号</label>
+            <input placeholder="请填写手机号"  type="number"  name="phone" placeholder-style="color:#929FB1; font-size:0.9em;font-weight:bold" /> 
+        </view>
+    </view>
+  </view>
+
+  <!--保险信息-->
+  <view class="banner insure">
+    <view class="layout">
+       <view class="airsure">
+            <navigator url="../safe/safe">
+            <text class="airinsure">航空综合险</text>
+            <view class="cir1"><image src="../../images/cir1.png" class="cir1"></image></view>
+            </navigator>
+            <view class="rule">百万保额，放心出行</view>
+        </view>
+        <view class="whole"> 
+                <text class="permessage">全程￥38/份</text>
+        </view>
+       <view class="body-view">
+        <switch checked bindchange="switch1Change" />   
+      </view>
+    </view>
+  </view>
+
+  <!--相关规定条款-->
+  <view class="read containerSmall">
+    <view class="choose"  hidden="{{mallhide}}">
+    <image src="{{tip}}" class="check" bindtap="app"></image>
+    </view>
+     <view class="choose"  hidden="{{hide}}">
+    <image src="{{ttp}}" class="checked" bindtap="appjs"  hidden="{{hide}}"></image>
+    </view>
+    <view class="txt">
+    已阅读且同意<navigator url="../guarantee/guarantee">相关规定</navigator>并<navigator url="../insure/insure">认可保险条款和金额</navigator>。
+    </view>
+  </view>
+</view>
+
+<!--底部-->
+ <view class="foot">
+       <view class="price">
+          <text class="money">￥1269.0</text>
+          <view class="detail" bindtap="showdetail" hidden="{{hidetravel}}">
+             <text>明细</text>
+             <image src="../../images/angle.png"></image>
+          </view>
+           <view class="detail" bindtap="pricedetail" hidden="{{showtravel}}">
+             <text>明细</text>
+             <image src="../../images/angle1.png"></image>
+          </view>
+      </view>
+      <view class="btn"  hidden="{{hide}}" >
+       <button class="next"  formType="submit" >
+         <text>下一步</text> 
+         <image src="../../images/row1.png"></image>   
+      </button>
+      </view>
+       <view class="btn" hidden="{{mallhide}}">
+        <button class="next" style="background:#DBDBEA;"  >
+         <text>下一步</text>
+         <image src="../../images/row1.png"></image>
+      </button>
+     </view>
+  </view>
+  </form> 
+  
+<!--机票信息弹出框-->
+<view  class="modal" hidden="{{modalhidden}}" bindtap="hiddenMask">
+</view>  
+  
+<!--去程信息-->
+<view  class="goselect"  hidden="{{modalhidden}}">
+  <view class="railpath">
+     <view class="railcenter timedate">
+        <view class="begintime">
+            <text class="datedetail">10-10周五</text>
+            <text class="time">10:30</text>
+        </view>
+        <view class="timelength">
+            <text>2小时0分钟</text>
+            <image src="../../images/timelength.png"></image>
+        </view>
+        <view class="endtime">
+           <text class="datedetail">10-10周五</text>
+            <text class="time">08:10</text>
+        </view>
+    </view>
+    <view class="railcenter location">
+        <text class="locateleft">上海虹桥机场T2</text>
+        <text class="locateright">首都国际机场T2</text>
+    </view>
+  </view>
+  <view class="broadcast railcenter">      
+        <text class="first">东方航空MU5130</text>
+        <text>波音737（中）</text>
+        <text class="last">有餐食</text>
+        <image src="../../images/gored.png"></image>  
+  </view>
+</view>
+
+<!--返程信息-->
+<view  class="backselect"  hidden="{{modalhidden}}">
+  <view class="railpath">
+     <view class="railcenter timedate">
+        <view class="begintime">
+            <text class="datedetail">10-10周五</text>
+            <text class="time">10:30</text>
+        </view>
+        <view class="timelength">
+            <text>2小时0分钟</text>
+            <image src="../../images/timelength.png"></image>
+        </view>
+        <view class="endtime">
+           <text class="datedetail">10-10周五</text>
+            <text class="time">08:10</text>
+        </view>
+    </view>
+    <view class="railcenter location">
+        <text class="locateleft">首都国际机场T2</text>
+        <text class="locateright">上海虹桥机场T2</text>
+    </view>
+  </view>
+  <view class="broadcast railcenter">
+        <text class="first">东方航空MU5130</text>
+        <text>波音737（中）</text>
+        <text class="last">有餐食</text>
+        <image src="../../images/backred.png"></image>
+  </view>
+</view>
+
+<!--退改签规则弹出框-->
+<!--<view class="quitrule"  hidden="{{rulehide}}">
+<image src="../../images/rule.png"></image>
+</view>
+ <view class="hiderule" hidden="{{rulehide}}" >
+        <image src="../../images/del.png" bindtap="hiderule" ></image>
+        <view class="title">
+        退改签规则
+        </view>
+        <view class="ticket">
+           <text class="adult">成人票</text>
+           <view class="ticketnote">
+               <label>退票费</label><text >只退机建和燃油</text>
+               <label>改期费</label><text>不可改期</text>
+               <label>签证</label><text>不可签转</text>
+           </view>
+           <view class="special">
+              <label>特殊说明</label><text>仅允许通过身份证购买机票，乘机人年龄需在100周岁（含）以下。</text>
+           </view>
+        </view>
+           <view class="childticket">
+           <text class="adult">儿童票</text>
+           <text class="phone">退改签规则以东方航空最新规定为准，可资讯客服电话（95530）</text>
+           </view>
+</view>-->
+
+<!--活动及购票须知弹窗-->
+<view class="quitrule"  hidden="{{activityhide}}">
+<image src="../../images/rule.png"></image>
+</view>
+ <view  class="hiderule" hidden="{{activityhide}}" >
+        <image src="../../images/del.png" bindtap="hideactivity" ></image>
+        <view class="title">
+        活动及购票须知
+        </view>
+        <view class="ticket">
+           <text class="adult buy">购票须知</text>        
+        </view>
+           <view class="childticket">
+           
+           <text class="phone bag">您可免费携带10公斤且体积不超过20*30*40CM
+           的非托运行李，无免费托运行李额</text>         
+           </view>
+</view>
+
+<!--价格明细底部弹窗-->
+<view  class="modal detailmodal" hidden="{{detail}}" bindtap="pricedetail">
+</view>    
+<view class="travelsite"  hidden="{{detail}}">
+ <view class="siteleft">去程</view>
+    <view class="siteright">
+       <text class="type top">成人票</text><text class="part top">2人</text><text class="sum top">￥1050</text>
+       <text class="type">机建/燃油</text><text class="part">2人</text><text class="sum">￥0/￥100</text>
+       <text class="type">航空综合险</text><text class="part">2份</text><text class="sum">￥60</text>
+       <text class="type">安心保险</text><text class="part">4份</text><text class="sum">￥80</text>
+       <text class="type">愈重行李</text><text class="part">20kg</text><text class="sum">￥60</text>
+       <text class="type">延误险</text><text class="part">2份</text><text class="sum">￥58</text>
+    </view>
+</view>
+
+</view>
+
+
+
+
+<!--添加乘机人-->
+
+  <view class="{{addhidden?'hid':'aa'}}">
+   <view class="wrap">
+  <!--信息完善-->
+      <block  wx:for="{{array}}" wx:if="{{!item.lack}}" wx:key="item.id">
+         <view class="sum">
+            <view class="sum-left" ><image src="{{item.src}}" class="ch-img" data-index="{{item.idx}}"  bindtap="checktap"></image></view>
+                  <view class="user sum-right">
+                    <image src="../../images/us.png" class="user-left"></image>
+                    <view class="user-right">
+                        <view>{{item.name}}</view>
+                   <!-- <view >{{item.surname}}</view>
+                        <view >{{item.givenname}}</view>-->
+                        <view >身份证：{{item.idcard}}</view>
+                   <!-- <view >护照：{{item.idcard}}</view>
+                        <view >出生证明：{{item.idcard}}</view>-->
+                    </view>
+                    <navigator url="../redact/redact?id={{item.id}}" class="redack"><image src="../../images/xk.png" class="red-img"></image></navigator>    
+                  </view>         
+         </view>
+       </block>
+<!--信息不完善-->
+     <block  wx:for="{{array}}" wx:if="{{item.lack}}" wx:key="item.id">
+         <view class="sum">
+            <view class="sum-left"><image src="{{item.src}}" class="ch-img" data-index="{{item.idx}}"  bindtap="checktap" ></image></view>
+                  <view class="{{index==array.length-1?'user noborder':'user'}}">
+                      <image src="../../images/us.png" class="user-left"></image>
+                      <view class="user-right">
+                        <view>{{item.name}}</view>
+                        <view >缺少{{item.lack}}</view>
+                      </view>
+                      <navigator class="complete" url="../redact/redact?id={{item.id}}">完善</navigator>     
+                  </view>
+         </view>
+       </block>
+
+
+
+   </view>
+<button class="addperson" bindtap="adduser">添加乘机人</button>
+<navigator url="../login/login">登录</navigator>
+</view>
+
+
+
+
+ 
+
+ 

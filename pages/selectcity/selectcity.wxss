@@ -1,0 +1,127 @@
+/**selectCity.wxss**/
+page {
+	height:100%;
+	font-size:32rpx;
+}
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	font-family:'微软雅黑';
+}
+.nav {
+	display:flex;
+	height:2.133rem;
+	border-bottom:1rpx solid #C7C7C9;
+}
+.nav view {
+	flex:1;
+	text-align: center;
+	height:2.107rem;
+	line-height: 2.107rem;
+	color:#4A586A;
+}
+.nav view.active{
+	color:#59A5F0;
+	border-bottom: 4rpx solid #59A5F0;
+}
+.wrapCity {
+	flex:1;
+}
+.wrapCity swiper{
+	height: 100%;
+}
+scroll-view {
+	display: box;
+	height:100%;
+}
+.wrap {
+	background:#F0EFF5;
+	padding:0 0 0 0.693rem;
+	font-size:28rpx;
+	color:#929FB1;
+
+}
+.wrap button {
+	background:#fff;
+
+}
+.wrap .now {
+	display:flex;
+	position:relative;
+	height:0.933rem;
+	padding-top:0.8rem;
+}
+.wrap .now image {
+	width:15.733rem;
+	height:0.64rem;
+	position:absolute;
+	top:55%;
+	right:0;
+}
+.wrap .hot {
+	display:flex;
+	position:relative;
+	height:0.933rem;
+	padding-top:0.8rem;
+}
+.wrap .hot image {
+	width:15.733rem;
+	height:0.64rem;
+	position:absolute;
+	top:55%;
+	right:0;
+}
+.wrap .cities {
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:-0.267rem;
+	padding:0.667rem 0 0;
+}
+.wrap .cities .city {
+	width:5.333rem;
+	height:1.6rem;
+	line-height:1.6rem;
+	margin:0.267rem;
+	font-size:32rpx;
+}
+.cityList view {
+	display:flex;
+	flex-direction:column;
+	padding-left:1.067rem;
+	height:2.667rem;
+	line-height:2.667rem;
+	text-align:left;
+	border-bottom:2rpx solid #eee;
+}
+.cityList .letterList {
+    background:#F0EFF5;
+    margin-left:-0.267rem;
+    height:1.333rem;
+    line-height:1.333rem;
+}
+.toolBar {
+	position:fixed;
+	z-index:99;
+	right:0;
+	width:1.6rem;
+	height:100%;
+	background:rgba(255,255,255,0.5);
+	color:#59A5F0;
+	font-size:24rpx;
+	display:flex;
+	flex-direction:column;
+}
+.toolBar scroll-view {
+	height:100%;
+	display:box;
+}
+.toolBar scroll-view view {
+	text-align:center;
+	width:100%;
+	height:1.2rem;
+}
+.toolBar scroll-view view:first-child {
+	margin-top:0.267rem;
+}

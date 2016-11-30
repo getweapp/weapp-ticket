@@ -1,0 +1,739 @@
+.containerSmall {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hid {
+  display: none;
+}
+
+.head {
+  height: 3.81rem;
+  background: #59A5F0;
+  width: 100%;
+  position: fixed;
+  padding-left: 1.12rem;
+  padding-right: 0.96rem;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.line {
+  color: #FFFFFF;
+  font-size: 31.6rpx;
+  font-weight: bold;
+}
+
+.bord {
+  height: 2.133rem;
+  line-height: 1.0665rem;
+}
+
+.state {
+  color: #C5DFF9;
+  height: 1.653rem;
+}
+
+.gostate {
+  font-size: 25.78rpx;
+  height: 1.653rem;
+  line-height: 1.653rem;
+}
+
+.gostate .txtstate_02 {
+  margin-right: 0.933rem;
+  margin-left: 0.933rem;
+  height: 1.653rem;
+}
+
+.gostate .txtstate_04 {
+  margin-left: 0.933rem;
+  height: 1.653rem;
+}
+
+.cir {
+  width: 29rpx;
+  height: 29rpx;
+  padding: 0 5rpx;
+}
+
+.ordergood {
+  /*height: 100%;*/
+  background: #F0EFF5;
+  position: absolute;
+  top: 119rpx;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 202rpx;
+  border-bottom: 0.026667rem solid #C7C7C7;
+  /*border-top: 1px solid #C7C7C7;*/
+  margin-top: 0rpx;
+  padding-top: 15rpx;
+  background: #fff;
+  margin-bottom: 56rpx;
+}
+
+.layout {
+  width: 713rpx;
+  margin-left: 35rpx;
+}
+
+.airpeople {
+  height: 100rpx;
+  border-bottom: 0.026667rem solid #C7C7C7;
+  line-height: 100rpx;
+}
+
+.airp {
+  display: block;
+  float: left;
+  color: #536277;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.addp {
+  float: right;
+}
+
+.add {
+  width: 68rpx;
+  height: 68rpx;
+  margin-right: 35rpx;
+  margin-top: 15rpx;
+}
+
+.person {
+  height: 73rpx;
+  padding-top: 20rpx;
+}
+
+.del {
+  width: 51rpx;
+  height: 51rpx;
+  float: left;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+.per {
+  width: 47rpx;
+  height: 44rpx;
+  float: left;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+
+.message {
+  float: left;
+  width: 582rpx;
+}
+
+.permessage {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #536277;
+}
+
+.arow {
+  width: 17rpx;
+  height: 29rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: -30rpx;
+}
+
+label {
+  width: 242rpx;
+}
+
+input {
+  height: 100rpx;
+}
+
+.insure {
+  height: 126rpx;
+}
+
+.airsure {
+  float: left;
+  width: 351rpx;
+}
+
+.airinsure {
+  display: block;
+  float: left;
+  color: #536277;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+
+.cir1 {
+  width: 32rpx;
+  height: 32rpx;
+  float: left;
+}
+
+.whole {
+  margin-top: 15rpx;
+}
+
+.rule {
+  float: left;
+  font-size: 0.75em;
+  color: #929FB1;
+  font-weight: bold;
+  margin-top: 15rpx;
+}
+
+.body-view {
+  float: right;
+  margin-top: -40rpx;
+  margin-right: 35rpx;
+}
+
+/*相关条款样式*/
+
+.read {
+  margin-top: -20rpx;
+  height: 82rpx;
+}
+
+.choose {
+  float: left;
+  height: 82rpx;
+}
+
+.check {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 10rpx;
+}
+
+.checked {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 10rpx;
+}
+
+.txt {
+  color: #929FB1;
+  font-size: 0.75em;
+  font-weight: bold;
+  height: 82rpx;
+  margin-top: 10rpx;
+}
+
+.txt navigator {
+  color: #59A5F0;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+/*底部样式*/
+
+.foot {
+  height: 108rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+.price {
+  height: 108rpx;
+  background: #59A5F0;
+  width: 456rpx;
+  float: left;
+  line-height: 108rpx;
+}
+
+.money {
+  font-size: 1.5em;
+  display: block;
+  color: #fff;
+  float: left;
+  margin-left: 30rpx;
+  margin-right: 25rpx;
+}
+
+.detail text {
+  color: #fff;
+  margin-right: 10rpx;
+}
+
+.detail image {
+  width: 19rpx;
+  height: 11rpx;
+  margin-bottom: 8rpx;
+}
+
+.btn {
+  width: 294rpx;
+  height: 108rpx;
+  float: left;
+}
+
+.next {
+  width: 294rpx;
+  height: 108rpx;
+  float: left;
+  line-height: 108rpx;
+  text-align: center;
+  background: #FF9A16;
+  border-radius: 0;
+}
+
+.next text {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
+.next image {
+  margin-left: 30rpx;
+  width: 25rpx;
+  height: 30rpx;
+}
+
+/*模态框样式*/
+
+.modal {
+  position: absolute;
+  background-color: #0F0F1E;
+  z-index: 1002;
+  left: 0;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.goselect {
+  width: 702rpx;
+  height: 234rpx;
+  z-index: 10000;
+  background: #fff;
+  color: black;
+  position: absolute;
+  top: 287rpx;
+  left: 23rpx;
+  border-radius: 10rpx;
+}
+
+.railpath {
+  z-index: 2100;
+  color: #000;
+  font-weight: bold;
+  height: 164rpx;
+  border-bottom: 0.026667rem dashed#D6D6D6;
+}
+
+.railcenter {
+  width: 650rpx;
+  margin: 0 auto;
+}
+
+.timedate {
+  height: 100rpx;
+  padding-top: 23rpx;
+}
+
+.location {
+  height: 47rpx;
+  display: flex;
+  /*margin-top: -15rpx;*/
+}
+
+.location text {
+  flex: 1;
+  color: #9BA8BA;
+  font-size: 0.9em;
+}
+
+.locateright {
+  text-align: right;
+}
+
+.backselect {
+  width: 702rpx;
+  height: 234rpx;
+  z-index: 2000;
+  background: #fff;
+  color: black;
+  position: absolute;
+  top: 544rpx;
+  left: 23rpx;
+  border-radius: 10rpx;
+}
+
+.begintime {
+  float: left;
+  width: 150rpx;
+  /*margin-right: 10rpx;*/
+}
+
+.time {
+  color: #444;
+  font-size: 1.5em;
+}
+
+.datedetail {
+  display: block;
+  color: #9BA8BA;
+  font-size: 0.8em;
+}
+
+.timelength {
+  float: left;
+  width: 320rpx;
+  margin: 0 10rpx;
+}
+
+.timelength text {
+  color: #ACD2F7;
+  font-size: 0.8em;
+  margin-left: 90rpx;
+}
+
+.timelength image {
+  width: 331rpx;
+  height: 42rpx;
+  /*margin: 0 10rpx;*/
+}
+
+.endtime {
+  float: left;
+  width: 157rpx;
+  text-align: center;
+}
+
+.broadcast {
+  height: 68rpx;
+  line-height: 68rpx;
+}
+
+.broadcast text {
+  background: url("../../images/airline.png") no-repeat right;
+  font-size: 0.9em;
+  margin-right: 10rpx;
+  color: #9BA8BA;
+}
+
+.broadcast .first {
+  padding-right: 15rpx;
+}
+
+.broadcast text.last {
+  background: none;
+}
+
+.broadcast image {
+  width: 47rpx;
+  height: 47rpx;
+  margin-bottom: -10rpx;
+}
+
+/*退改签规则弹出框*/
+
+.quitrule {
+  position: absolute;
+  z-index: 1002;
+  width: 100%;
+  height: 100%;
+}
+
+.quitrule image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hiderule {
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: absolute;
+}
+
+.hiderule image {
+  display: block;
+  width: 37rpx;
+  height: 37rpx;
+  float: right;
+  margin-top: 35rpx;
+  margin-right: 33rpx;
+}
+
+.title {
+  width: 100%;
+  height: 88rpx;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 82rpx;
+  line-height: 88rpx;
+  border-bottom: 7rpx solid #D6D6D6;
+}
+
+/*票价信息*/
+
+.adult {
+  display: block;
+  width: 602rpx;
+  height: 82rpx;
+  margin: 0 auto;
+  border-bottom: 0.026667rem solid #D6D6D6;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 82rpx;
+  padding-left: 94rpx;
+}
+
+.ticketnote {
+  width: 100%;
+  height: 304rpx;
+}
+
+.ticketnote label {
+  display: block;
+  width: 150rpx;
+  height: 84rpx;
+  float: left;
+  margin-left: 111rpx;
+  color: #fff;
+  line-height: 84rpx;
+}
+
+.ticketnote text {
+  display: block;
+  width: 485rpx;
+  height: 84rpx;
+  border-bottom: 0.026667rem solid #D6D6D6;
+  float: left;
+  color: #fff;
+  line-height: 84rpx;
+}
+
+.special {
+  width: 100%;
+  height: 117rpx;
+  border-bottom: 7rpx solid #D6D6D6;
+}
+
+.special label {
+  width: 190rpx;
+  height: 84rpx;
+  float: left;
+  margin-left: 70rpx;
+  color: #fff;
+}
+
+.special text {
+  display: block;
+  width: 445rpx;
+  height: 84rpx;
+  float: left;
+  color: #dedede;
+  font-size: 0.8em;
+  padding-right: 40rpx;
+}
+
+.phone {
+  display: block;
+  width: 450rpx;
+  height: 117rpx;
+  margin-left: 252rpx;
+  color: #dedede;
+  font-size: 0.8em;
+  padding-top: 30rpx;
+}
+
+/*活动须知*/
+
+.bag {
+  margin-left: 78rpx;
+}
+
+.ticket .buy {
+  padding-left: 20rpx;
+}
+
+/*底部价格明细弹窗*/
+
+.detailmodal {
+  position: absolute;
+  bottom: 108rpx;
+}
+
+.travelsite {
+  width: 100%;
+  height: 355rpx;
+  position: absolute;
+  bottom: 108rpx;
+  z-index: 10003;
+}
+
+.siteleft {
+  color: #fff;
+  font-weight: bold;
+  width: 117rpx;
+  height: 355rpx;
+  border-right: 0.026667rem dashed #fff;
+  line-height: 355rpx;
+  text-align: center;
+  background: #536277;
+  float: left;
+  font-size: 1em;
+}
+
+.siteright {
+  width: 632rpx;
+  height: 355rpx;
+  float: left;
+  background: #627083;
+  opacity: 0.8;
+}
+
+.siteright text {
+  float: left;
+  display: block;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.type {
+  margin-left: 32rpx;
+  width: 234rpx;
+  height: 43rpx;
+}
+
+.top {
+  margin-top: 43rpx;
+}
+
+.part {
+  width: 170rpx;
+  height: 43rpx;
+}
+
+.sum {
+  width: 196rpx;
+  height: 43rpx;
+}
+
+form {
+  width: 100%;
+  height: auto;
+}
+
+/*添加乘机人*/
+
+/**index.wxss**/
+
+/*page{ background-color: #F0EFF5;}*/
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 58rpx 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  border-top: 0.026667rem solid #C7C7C9;
+  border-bottom: 0.026667rem solid #C7C7C9;
+  background: #FFFFFF;
+}
+
+.sum {
+  height: 100rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sum-left {
+  float: left;
+  width: 105rpx;
+  height: 98rpx;
+}
+
+.user {
+  border-bottom: 0.026667rem solid #C7C7C9;
+  width: 647rpx;
+  float: left;
+  height: 98rpx;
+  font-size: 0.75em;
+  overflow: hidden;
+}
+
+.noborder {
+  border: none;
+}
+
+.user-left {
+  float: left;
+}
+
+.user-right {
+  float: left;
+  margin: 13rpx 0 0 10rpx;
+}
+
+.redack {
+  width: 140rpx;
+  height: 98rpx;
+  float: right;
+}
+
+.ch-img,
+.user-left {
+  width: 46rpx;
+  height: 46rpx;
+  margin-top: 26rpx;
+}
+
+.ch-img {
+  margin-left: 35rpx;
+}
+
+.red-img {
+  width: 58rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+  margin-left: 35rpx;
+}
+
+.addperson {
+  background: #59A5F0;
+  color: #FFFFFF;
+  width: 680rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  margin-top: 35rpx;
+}
+
+.complete {
+  float: right;
+  width: 142rpx;
+  height: 75rpx;
+  border: 0.026667rem solid #59A5F0;
+  border-radius: 40rpx;
+  line-height: 75rpx;
+  text-align: center;
+  color: #59A5F0;
+  margin: 10rpx 35rpx 0 0;
+}
+
+.hid {
+  display: none;
+}

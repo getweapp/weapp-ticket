@@ -1,0 +1,91 @@
+<!--index.wxml-->
+<view class="container_hd">
+    <!--酒店详情-->
+  <view  class="hotelDetails"> 
+    <image src="../../images/Bighotel.png" class="hotelImage"></image>   
+  </view>
+  <view class="mapImage">
+      <text>虹桥机场迎宾一路456号</text>
+  </view>
+  <view class="iconImage">
+      <view class="up">
+        <view class="leftIcon">
+          <icon type="success_circle" size="20" color="#7D8DA4"/>
+          2008年开业
+        </view>
+        <view class="rightIcon">
+          <image class="Image_01" src="../../images/training.png"></image>
+          <image class="Image_02" src="../../images/swim.png"></image>
+          <image class="Image_03" src="../../images/wifi.png"></image>
+        </view>
+    </view>
+    <view class="down">
+      <text class="timerIcon">提示：该酒店支持接机服务，若需要此服务请登机前致电前台预约。</text>
+    </view>
+  </view>
+  <view class="leaveHotel">
+      <view class="leavehotel">
+        <text>9月8日</text>入住  ——  <text>9月11日</text>离店
+      </view>
+  </view>
+  <view class="allDetails">
+     <view class="Detailhotel">
+      <image class="leftHotel" src="../../images/hotelXQ.png"></image>
+      <view class="middleContent">
+        <text class="text_01">标准单人间</text>
+        <text class="text_02">标准间/无早、不可加床、可住2人</text>
+        <text class="text_03">1间</text>
+      </view>
+      <view class="rightPrice">
+        <text class="add">+ ￥1440</text>
+        <button class="Choose">已选择</button>
+      </view>
+    </view>
+   <view class="Detailhotel">
+     <image class="leftHotel" src="../../images/hotelXQ.png"></image>
+      <view class="middleContent">
+        <text class="text_01">标准单人间</text>
+        <text class="text_02">标准间/无早、不可加床、可住2人</text>
+        <text class="text_03">1间</text>
+      </view>
+      <view class="rightPrice">
+        <text class="reduce">- ￥100</text>
+        <button class="noChoose">选择</button>
+      </view>
+    </view>
+    <view class="Detailhotel">
+      <image class="leftHotel" src="../../images/hotelXQ.png"></image>
+      <view class="middleContent">
+        <text class="text_01">标准单人间</text>
+        <text class="text_02">标准间/无早、不可加床、可住2人</text>
+        <text class="text_03">1间</text>
+      </view>
+      <view class="rightPrice">
+        <text class="add">+ ￥1440</text>
+        <button class="noChoose">选择</button>
+      </view>
+    </view>
+    <view class="Detailhotel">
+      <image class="leftHotel" src="../../images/hotelXQ.png"></image>
+      <view class="middleContent">
+        <text class="text_01">标准单人间</text>
+        <text class="text_02">标准间/无早、不可加床、可住2人</text>
+        <text class="text_03">1间</text>
+      </view>
+      <view class="rightPrice">
+        <text class="add">+ ￥1440</text>
+        <button class="noChoose">选择</button>
+      </view>
+    </view>
+  </view>
+   <view class="footer">
+    <text class="retract">收起</text>
+    <image class="footerIcon" src="../../images/bencher.jpg">
+      <!--箭头向上--收起-->
+      <image class="topimg" src="../../images/top.png"></image>
+       <!--箭头向下--展开-->
+      <!--<image class="hidden" src="../../images/footerImg.png"></image>-->
+    </image>
+    <!--<button class="footerIcon">收起</button>-->
+  </view>
+</view>

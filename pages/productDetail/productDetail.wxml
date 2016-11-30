@@ -1,0 +1,117 @@
+<view class="container">
+  <view class="pannel dateNum">
+    <view class="date">
+      <text>9月8日</text>
+      <text class="small">出发</text>
+    </view>
+    <view class="num">
+      <text>2成人</text>
+      <text>0儿童</text>
+    </view>
+  </view>
+
+  <view class="pannel flight">
+    <view class="goFlight">
+      <view class="flightDate">
+        <view>
+          <text>上海</text>
+          <text class="time">10:30</text>
+        </view>
+        <view>
+          <text class="date">2016/04/05</text>
+          <text class="flightPic"></text>
+        </view>
+        <view>
+          <text>北京</text>
+          <text class="time">08:30</text>
+        </view>
+      </view>
+
+      <view class="flightLine airport">
+        <text>上海虹桥机场T2</text>
+        <text class="small">经停济南</text>
+        <text>首都国际机场T2</text>
+      </view>
+
+      <view class="flightLine flightDetail">
+        <text class="flightName">东方航空MU5130</text>
+        <text>|</text>
+        <text>波音737（中）</text>
+        <text class="go">去程</text>
+      </view>
+    </view>
+
+    <view class="backFlight">
+      <view class="flightDate">
+        <view>
+          <text>上海</text>
+          <text class="time">10:30</text>
+        </view>
+        <view>
+          <text class="date">2016/04/05</text>
+          <text class="flightPic"></text>
+        </view>
+        <view>
+          <text>北京</text>
+          <text class="time">08:30</text>
+        </view>
+      </view>
+
+      <view class="flightLine airport">
+        <text>上海虹桥机场T2</text>
+        <text class="small">经停济南</text>
+        <text>首都国际机场T2</text>
+      </view>
+
+      <view class="flightLine flightDetail">
+        <text class="flightName">东方航空MU5130</text>
+        <text>|</text>
+        <text>波音737（中）</text>
+        <text class="go">去程</text>
+      </view>
+    </view>
+
+    <view class="remark">
+      <icon type="warn" size="16" color="#ff7f00"/>
+      <view>退改签说明/婴儿不可订</view>
+    </view>
+
+    <view class="changeFlight" bindtap="changeFlight">更换机票</view>
+  </view>
+
+  <view class="pannel hotel" bindtap="hotel">
+    <view class="hotelHead">
+      <view class="hotelName">
+        <text>北京香格里拉国际酒店</text>
+        <text class="pink">2015-09-08至2015-09-20</text>
+      </view>
+      <view>
+        <text class="hotelDetail">酒店详情 ></text>
+      </view>
+    </view>
+
+    <view class="hotelPic">
+      <image src="{{picSrc}}"></image>
+    </view>
+
+    <view class="address">
+      <text class="addressName">崇文门西大街1号</text>
+      <text class="grey">标准间/无早/不可加床/可住2人</text>
+    </view>
+
+    <view class="remark">
+      <icon type="warn" size="16" color="#ff7f00"/>
+      <view>政策/特别提示</view>
+    </view>
+
+    <view class="changeHotel">更换酒店</view>
+
+  </view>
+
+  <view class="tabBar">
+    <text class="name">套餐总价</text>
+    <text class="totalPrice">￥3411</text>
+    <text class="priceDetail">费用明细</text>
+    <view class="nextStep">下一步</view>
+  </view>
+</view>
